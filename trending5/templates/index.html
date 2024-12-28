@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Trending 5</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <button onclick="get_trending('scrape')">Click here to run the script</button>
+    <div id="loading">
+        <span></span><br>
+        Loading... Please wait.
+    </div>
+    <div id="content">
+        <!-- This is where the results will be appended -->
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}" type="text/javascript"></script>
+</body>
+</html>
